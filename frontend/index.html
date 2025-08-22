@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoppers Cart</title>
+
+    <!-- 1. Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 2. Tailwind custom config -->
+    <script>
+      window.tailwind = {
+        config: {
+          theme: {
+            extend: {
+              colors: {
+                brand: {
+                  light: '#4F9CF9',
+                  DEFAULT: '#3B82F6',
+                  dark:  '#2563EB',
+                },
+                accent: '#F97316',
+              },
+              fontFamily: {
+                sans:    ['Inter', 'system-ui', 'sans-serif'],
+                heading: ['Poppins', 'sans-serif'],
+              },
+              boxShadow: {
+                card: '0 4px 16px rgba(0,0,0,0.1)',
+              },
+              borderRadius: {
+                xl: '1rem',
+              },
+            },
+          },
+        },
+      }
+    </script>
+
+    <!-- 3. Tailwind via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans bg-gray-100">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
